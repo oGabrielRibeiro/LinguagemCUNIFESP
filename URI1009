@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+	
+	char NAME;    
+    double VENDAS, SALARY, TOTAL;
+    
+    scanf("%s",&NAME);
+    scanf("%lf",&SALARY);
+    scanf("%lf",&VENDAS);
+    
+    TOTAL = SALARY + (VENDAS * 15) / 100;
+    
+    printf("TOTAL = R$ %.2lf\n",TOTAL);
+    return 0;
+}
