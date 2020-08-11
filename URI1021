@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+
+    double VALOR;
+    int A, B, C;
+    scanf("%lf", &VALOR);
+    C = VALOR * 100;
+    C = C / 100;
+    printf("NOTAS:\n");
+    A = C / 100;
+    C = C - A * 100;
+    printf("%d nota(s) de R$ 100.00\n", A); 
+    A = C / 50;
+    C = C - A * 50;
+    printf("%d nota(s) de R$ 50.00\n", A);
+    A = C / 20;
+    C = C - A * 20;
+    printf("%d nota(s) de R$ 20.00\n", A);
+    A = C / 10;
+    C = C - A * 10;
+    printf("%d nota(s) de R$ 10.00\n", A);
+    A = C / 5;
+    C = C - A * 5;
+    printf("%d nota(s) de R$ 5.00\n", A);
+    A = C / 2;
+    C = C - A * 2;
+    printf("%d nota(s) de R$ 2.00\n", A);
+    A = C / 1;
+
+    C = VALOR * 100;
+    C = C % 100;
+
+    printf("MOEDAS:\n");
+    printf("%d moeda(s) de R$ 1.00\n", A);
+    B = C / 50;
+    C = C - B * 50;
+    printf("%d moeda(s) de R$ 0.50\n", B);
+    B = C / 25;
+    C = C - B * 25;
+    printf("%d moeda(s) de R$ 0.25\n", B);
+    B = C / 10;
+    C = C - B * 10;
+    printf("%d moeda(s) de R$ 0.10\n", B);
+    B = C / 5;
+    C = C - B * 5;
+    printf("%d moeda(s) de R$ 0.05\n", B);
+    B = C / 1;
+    printf("%d moeda(s) de R$ 0.01\n", B); 
+    return 0;
+}
