@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    double KMPH,HRS,DIS,L,KML;
+    KML=12;
+    
+    scanf("%lf",&HRS);
+    scanf("%lf",&KMPH);
+    
+    DIS=KMPH*HRS;
+    L=DIS/KML;
+    printf("%.3lf\n",L);
+ 
+    return 0;
+}
