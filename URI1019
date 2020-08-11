@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int VALOR,HRS,MIN,SEC;
+    
+    scanf("%d",&VALOR);
+    
+    HRS=VALOR/3600;
+    VALOR=VALOR-(HRS*3600);
+    MIN=VALOR/60;
+    VALOR=VALOR-(MIN*60);
+    SEC=VALOR/1;
+    
+    printf("%d:%d:%d\n",HRS,MIN,SEC);
+ 
+    return 0;
+}
