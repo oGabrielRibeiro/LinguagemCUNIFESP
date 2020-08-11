@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int VALOR,ANO,MES,DIA;
+    
+    scanf("%d",&VALOR);
+    
+    ANO=VALOR/365;
+    VALOR=VALOR-(ANO*365);
+    MES=VALOR/30;
+    VALOR=VALOR-(MES*30);
+    DIA=VALOR/1;
+    
+    printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n",ANO,MES,DIA);
+    return 0;
+}
