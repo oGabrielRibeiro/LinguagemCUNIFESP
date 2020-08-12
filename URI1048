@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(){
+
+    int A,B,C,G,M,S,TEMP;
+    scanf("%d %d %d",&A,&B,&C);
+
+    G = A;
+    M = B;
+    S = C;
+
+    if (G < M)
+    {
+        TEMP = G;
+        G = M;
+        M = TEMP;
+    }
+    if (M < S)
+    {
+        TEMP = M;
+        M = S;
+        S = TEMP;
+    }
+    if (G < M)
+    {
+        TEMP = G;
+        M = M;
+        M = TEMP;
+    }
+    printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",S,M,G,A,B,C);
+
+    return 0;
+}
