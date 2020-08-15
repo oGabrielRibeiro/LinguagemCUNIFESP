@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    double a,b,c,PERIMETRO,AREA;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    
+    if(a<b+c && b<a+c && c<a+b)
+    {
+        PERIMETRO=a+b+c;
+        printf("Perimetro = %.1lf\n",PERIMETRO);
+    }
+    else
+    {
+        AREA=((a+b)*c)/2;
+        printf("Area = %.1lf\n",AREA);
+    }
+    return 0;
+}
