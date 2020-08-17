@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int A,B,X,Y;
+    scanf("%d %d",&A,&B);
+    
+    if(A<B){
+        X=B-A;
+        printf("O JOGO DUROU %d HORA(S)\n",X);
+    }
+    else{
+        Y=24-A+B;
+        printf("O JOGO DUROU %d HORA(S)\n",Y);
+    }
+    return 0;
+}
