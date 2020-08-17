@@ -1,0 +1,44 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    double SALARIO,SALARIO_REA,BONUS;
+    scanf("%lf",&SALARIO);
+    
+    if(SALARIO<=400.00){
+        BONUS=(SALARIO*15)/100;
+        SALARIO_REA=BONUS+SALARIO;
+        printf("Novo salario: %.2lf\n",SALARIO_REA);
+        printf("Reajuste ganho: %.2lf\n",BONUS);
+        printf("Em percentual: 15 %\n");
+    }
+    else if(SALARIO<=800){
+    	BONUS=(SALARIO*12)/100;
+    	SALARIO_REA=BONUS+SALARIO;
+    	printf("Novo salario: %.2lf\n",SALARIO_REA);
+    	printf("Reajuste ganho: %.2lf\n",BONUS);
+    	printf("Em percentual: 12 %\n");
+	}
+	else if(SALARIO<=1200){
+		BONUS=(SALARIO*10)/100;
+		SALARIO_REA=BONUS+SALARIO;
+		printf("Novo salario: %.2lf\n",SALARIO_REA);
+		printf("Reajuste ganho: %.2lf\n",BONUS);
+		printf("Em percentual: 10 %\n");
+	}
+	else if(SALARIO<=2000){
+		BONUS=(SALARIO*7)/100;
+		SALARIO_REA=BONUS+SALARIO;
+		printf("Novo salario: %.2lf\n",SALARIO_REA);
+		printf("Reajuste ganho: %.2lf\n",BONUS);
+		printf("Em percentual: 7 %\n");
+	}
+	else{
+		BONUS=(SALARIO*4)/100;
+		SALARIO_REA=BONUS+SALARIO;
+		printf("Novo salario: %.2lf\n",SALARIO_REA);
+		printf("Reajuste ganho: %.2lf\n",BONUS);
+		printf("Em percentual: 4 %\n");
+	}
+    return 0;
+}
