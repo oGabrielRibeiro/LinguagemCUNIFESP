@@ -1,0 +1,31 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int A,B,C,D,X,Y;
+    scanf("%d %d %d %d",&A,&B,&C,&D);
+    
+    X=C-A;
+    
+    if(X<0){
+        X+=24;
+        X--;
+    }
+    Y=D-B;
+    if(Y<0){
+        Y+=60;
+    }
+    if(A==C && B==D){
+        printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+    }
+    else if(A==C && B>D){
+    	printf("O JOGO DUROU 23 HORA(S) E %d MINUTO(S)\n",Y);
+	}
+	else if(A<C && B>D){
+		printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",X-1,Y);
+	}
+    else{
+        printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",X,Y);
+    }
+    return 0;
+}
