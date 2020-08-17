@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    
+    char C1[]="vertebrado", C11[22]="ave", C12[]="mamifero";
+    char C111[]="carnivoro", C112[]="onivoro", C124[]="herbivoro";
+    char A1[]="aguia", A2[]="pomba", A3[]="homem", A4[]="vaca";
+    char C2[]="invertebrado", C21[]="inseto", C22[]="anelideo";
+    char C211[]="hematofago", A5[]="pulga", A6[]="lagarta";
+    char A7[]="sanguessuga", A8[]="minhoca";
+    char A[22], B[22], C[22];
+    
+    scanf("%s", A);
+    if(0==strcmp(A,C1)){
+        scanf("%s",B);
+        if(0==strcmp(B,C11)){
+            scanf("%s",C);
+            if(0==strcmp(C,C111))
+                printf("%s\n",A1);
+            else if(0==strcmp(C,C112))
+                printf("%s\n",A2);
+        }
+        if(0==strcmp(B,C12)){
+            scanf("%s",&C);
+            if(0==strcmp(C,C112))
+                printf("%s\n",A3);
+            else if(0==strcmp(C,C124))
+                printf("%s\n",A4);
+        }
+    }
+    
+    else if(0==strcmp(A,C2)){
+        scanf("%s",B);
+        if(0==strcmp(B,C21)){
+            scanf("%s",&C);
+            if(0==strcmp(C,C211))
+                printf("%s\n",A5);
+            else if(0==strcmp(C,C124))
+                printf("%s\n",A6);
+        }
+        if(0==strcmp(B,C22)){
+            scanf("%s",&C);
+            if(0==strcmp(C,C211))
+                printf("%s\n",A7);
+            else if(0==strcmp(C,C112))
+                printf("%s\n",A8);
+        }
+    }
+    return 0;
+}
