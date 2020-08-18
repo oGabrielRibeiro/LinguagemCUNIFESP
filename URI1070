@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+ int i,A;
+    scanf("%d",&A);
+    
+    if(A%2==0){
+        A++;
+    }
+    else{
+        A=A;
+    }
+    printf("%d\n",A);
+    for(i=1;i<=5;i++){
+    printf("%d\n",A+=2);
+    }
+    return 0;
+}
