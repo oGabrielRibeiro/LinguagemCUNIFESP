@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+ int i,A,B,t,X;
+    while(scanf("%d%d",&A,&B)==2){
+        X=0;
+        if(A>B){
+            t=A;
+            A=B;
+            B=t;
+        }
+        if(A%2!=0){
+        for(i=A+2;i<B;i++){
+            if(i%2!=0)
+                X+=i;
+            }
+        }
+        else{
+            for(i=A+1;i<B;i++){
+            if(i%2!=0)
+                X+=i;
+            }
+        }
+        printf("%d\n",X);
+    }
+
+    return 0;
+}
