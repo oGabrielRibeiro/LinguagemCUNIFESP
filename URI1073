@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main(){
+  
+    int X,A,i;
+    scanf("%d",&A);
+    
+    for(i=2;i<=A;i+=2){
+    	i=i;
+    	X=i*i;
+    	printf("%d^2 = %d\n",i,X);
+	}
+  	
+    return 0;
+}
