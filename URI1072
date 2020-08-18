@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main(){
+  
+    int X,n,In,Out,i;
+  	scanf("%d", &X);
+    In = 0;
+    Out = 0;
+  
+    for(i=0;i<X;i++){
+        scanf("%d",&n);
+        if((n>=10) && (n<=20)){
+            In++;
+        }else{
+            Out++;
+        }
+    }
+  
+    printf("%d in\n", In);
+    printf("%d out\n",Out);
+    return 0;
+}
