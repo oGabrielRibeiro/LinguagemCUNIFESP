@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(){
+    
+	int l, c, soma = 0, k, test, n, val = 285,X;
+	
+	scanf("%d", &test);
+	
+	for(k = 0; k < test; k++){
+		for(l = 0; l < 9; l++){
+			for(c = 0; c < 9; c++){
+				scanf("%d", &n);
+				soma += n * n;
+			}
+		}
+		printf("%d",soma/9);
+		if(soma/9 == val){
+			printf("Instancia %d\n", k+1);
+			printf("SIM\n");
+		} else {
+			printf("Instancia %d\n", k+1);
+			printf("NAO\n");
+		}
+	}
+	return 0;
+}
